@@ -67,3 +67,15 @@
   .icon-search:before {
     content: "\e90d";
   }
+  .icon-settings:before {
+    content: "\e90e";
+  }
+  .icon-text:before {
+    content: "\e90f";
+  }
+  .icon-users:before {
+    content: "\e910";
+  }
+  .icon-video:before {
+    content: "\e911";
+  }

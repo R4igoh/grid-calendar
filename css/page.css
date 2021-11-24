@@ -9,15 +9,13 @@
 
 .page .header {
     grid-area: header;
-    border: 1px solid blue;
+    border-block-end: 1px solid var(--gray10);
 }
 
 .page .sidebar {
     grid-area: sidebar;
-    border: 1px solid yellow;
 }
 
 .page .calendar {
     grid-area: calendar;
-    border: 1px solid purple;
 }

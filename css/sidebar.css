@@ -1,0 +1,76 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+}
+
+.tasks {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tasks-list {
+    inline-size: 100%;
+}
+
+.tasks-list .details {
+    cursor: pointer;
+    inline-size: 100%;
+}
+
+
+.tasks-list .details summary {
+    display: flex;
+    align-items: center;
+    margin-block-end: .5rem;
+    list-style: none;
+    position: relative;
+
+}
+
+.tasks-list .details summary:after {
+    content: url('../icons/chevron-down.svg');
+    position: absolute;
+    right: 0;
+}
+
+.tasks-list .details[open] summary:after {
+    content: url('../icons/chevron-up.svg');
+    position: absolute;
+    right: 0;
+ }
+
+
+.tasks-list .tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    user-select: none;
+}
+
+.task-check {
+    display: none;
+}
+
+.task-filter > input + label {
+    content: url('../icons/check.svg');
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0 0 0 0px;
+    display:inline-block;
+}
+
+.task-filter > input:checked + label {
+    content: url('../icons/check-square.svg');
+    height: 1.5rem;
+    width: 1.5rem;
+    padding: 0 0 0 0px;
+    display:inline-block;
+}
