@@ -1,3 +1,7 @@
+.header-day {
+    inline-size: 1rem;
+}
+
 .calendarDay {
     display: flex;
     flex-direction: column;
@@ -52,6 +56,30 @@
     color: var(--blue10);
 }
 .calendarDay.is-selected span:nth-of-type(2) {
+    background: var(--blue10);
+    color: var(--white);
+}
+
+.header-day .calendarDay a{
+    display: flex;
+}
+
+.header-day .calendarDay {
+    border-block-end: 0px solid currentColor;
+}
+
+.header-day .calendarDay::before {
+    inline-size: 0px;
+    border: none;
+}
+
+.header-day .calendarDay a span:nth-of-type(1),
+.header-day .calendarDay a span:nth-of-type(1) {
+    color: var(--blue10);
+}
+
+.header-day .calendarDay a span:nth-of-type(2),
+.header-day .calendarDay a span:nth-of-type(2) {
     background: var(--blue10);
     color: var(--white);
 }

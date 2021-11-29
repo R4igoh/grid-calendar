@@ -17,3 +17,23 @@
     display: block;
     transform: translateY(-50%);
 }
+
+.currentTimeDay {
+    block-size: 2px;
+    background: var(--red10);
+    /* max-inline-size: 5rem; */
+    position: absolute;
+    inset-inline-start: 43px;
+    inset-block-start: 200px;
+    inline-size: calc(100% - 43px);
+}
+
+.currentTimeDay::before {
+    content: '';
+    inline-size: 1rem;
+    block-size: 1rem;
+    background: var(--red10);
+    border-radius: 50%;
+    display: block;
+    transform: translateY(-50%);
+}
